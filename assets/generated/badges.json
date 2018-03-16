@@ -1,0 +1,40 @@
+{
+	"badge": [
+		{
+			"name": "gymnaste",
+			"id": 1,
+			"score": 30
+		}
+	],
+	"badgesNext": [
+		{
+			"name": "grimpeur",
+			"id": 2,
+			"score": 20
+		},
+		{
+			"name": "sherlock",
+			"id": 4,
+			"score": 15
+		}
+	],
+	"badgesAfter": [
+		{
+			"name": "test1",
+			"id": 5,
+			"score": 10
+		},
+		{
+			"name": "test2",
+			"id": 6,
+			"score": 5
+		}
+	],
+	"badgeFinal": [
+		{
+			"name": "final",
+			"id": 7,
+			"score": 0
+		}
+	],
+}

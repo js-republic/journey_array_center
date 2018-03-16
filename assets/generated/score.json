@@ -1,0 +1,6 @@
+{
+	"scoreFor": [1, 0, 0, 1, 0, 1, 0, 0],
+	"scoreWhile": [1, 0, 1, 0, 1, 0, 1, 1, 1, 1],
+	"totalFor": 20,
+	"totalWhile": 10
+}

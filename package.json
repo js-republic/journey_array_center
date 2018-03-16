@@ -1,0 +1,22 @@
+{
+  "name": "journey_array_center",
+  "version": "1.0.0",
+  "description": "=> Step 1 Front\r => Step 2 Back\r => Step 3 Checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-republic/journey_array_center.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/js-republic/journey_array_center/issues"
+  },
+  "homepage": "https://github.com/js-republic/journey_array_center#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
