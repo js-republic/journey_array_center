@@ -4,7 +4,8 @@
   "description": "=> Step 1 Front\r => Step 2 Back\r => Step 3 Checker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,21 @@
     "url": "https://github.com/js-republic/journey_array_center/issues"
   },
   "homepage": "https://github.com/js-republic/journey_array_center#readme",
+  "jest": {
+    "notify": true,
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testMatch": [
+      "**/*.spec.js"
+    ],
+    "testEnvironment": "node"
+  },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "npm": "^5.8.0"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
   }
 }

@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const port = 3001;
 
-const { getScore } = require('./controllers');
+const { getScore, getBadges } = require('./exercises/ex1/ex1-fs');
 
 // app.get('/', function (req, res) {
 //   res.send('Hello World!')
@@ -13,3 +13,5 @@ const { getScore } = require('./controllers');
 // });
 
 getScore().then(result => console.log(result));
+
+getBadges().then(result => console.log(result))

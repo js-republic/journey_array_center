@@ -4,7 +4,7 @@ function getScore() {
 
 	return new Promise((resolve) => {
 
-		fs.readFile('assets/generated/score.json', 'utf-8', (err, data) => {
+		fs.readFile('src/exercises/ex1/files/score.json', 'utf-8', (err, data) => {
 
 			const content = JSON.parse(data);
 
@@ -42,6 +42,27 @@ function getScore() {
 	});
 }
 
+function getBadges(){
+	return new Promise((resolve) => {
+		fs.readFile('src/exercises/ex1/files/badges.json', 'utf-8', (err,data) => {
+			const contentFileParsed = JSON.parse(data);
+
+			let allBadges = [];
+
+			for(const key in contentFileParsed){
+				if(contentFileParsed.hasOwnProperty(key)){
+					for(let i = 0; i < contentFileParsed[key].length; i++){
+						allBadges.push(contentFileParsed[key][i]);
+					}
+				}
+			}
+
+			resolve(allBadges);
+		})
+	});
+}
+
 module.exports = {
 	getScore,
+	getBadges,
 };
