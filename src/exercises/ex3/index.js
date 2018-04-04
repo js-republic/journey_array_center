@@ -1,7 +1,4 @@
-function doIHaveFruits() {
-	const fruits = ['banana', 'apple', 'orange'];
-	const whatIHave = ['tomato', 'cucumber'];
-	const whatIHaveNext = ['meat', 'milk', 'apple'];
+function doIHaveFruits(fruits, whatIHave) {
 
 	let haveFruits = false;
 
@@ -11,16 +8,9 @@ function doIHaveFruits() {
 		}
 	}
 
-	if(!haveFruits) {
-		for (let j = 0; j < whatIHaveNext.length; j++) {
-			if(fruits.indexOf(whatIHaveNext[j]) !== -1) {
-				haveFruits = true;
-			}
-		}
-	}
+	return haveFruits;
 
-	// const haveFruits = whatIHave
-	// 	.concat(whatIHaveNext)
+	// return whatIHave
 	// 	.some(x => fruits.includes(x));
 }
 
@@ -58,3 +48,9 @@ function everyNoteUpThanTen() {
 
 	// const allNotesGood = notes.every(note => note >= minNote);
 }
+
+module.exports = {
+	doIHaveFruits,
+	urlHasKeyword,
+	everyNoteUpThanTen,
+};
