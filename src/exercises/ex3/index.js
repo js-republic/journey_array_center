@@ -10,8 +10,7 @@ function doIHaveFruits(fruits, whatIHave) {
 
 	return haveFruits;
 
-	// return whatIHave
-	// 	.some(x => fruits.includes(x));
+	// return whatIHave.some(x => fruits.includes(x));
 }
 
 function urlHasKeyword(splittedUrl) {
@@ -26,8 +25,7 @@ function urlHasKeyword(splittedUrl) {
 
 	return hasEasterEgg;
 
-	// return url
-	// 	.some(x => x === 'easteregg');
+	// return url.some(x => x === 'easteregg');
 }
 
 function everyNoteUpThanTen(minNote, notes) {

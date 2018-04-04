@@ -4,7 +4,7 @@ function getScore() {
 
 	return new Promise((resolve) => {
 
-		fs.readFile('src/exercises/ex1/files/score.json', 'utf-8', (err, data) => {
+		fs.readFile('src/exercises/ex8/files/score.json', 'utf-8', (err, data) => {
 
 			const content = JSON.parse(data);
 
@@ -44,7 +44,7 @@ function getScore() {
 
 function getBadges(){
 	return new Promise((resolve) => {
-		fs.readFile('src/exercises/ex1/files/badges.json', 'utf-8', (err,data) => {
+		fs.readFile('src/exercises/ex8/files/badges.json', 'utf-8', (err,data) => {
 			const contentFileParsed = JSON.parse(data);
 
 			let allBadges = [];
@@ -58,7 +58,7 @@ function getBadges(){
 			}
 
 			resolve(allBadges);
-		})
+		});
 	});
 }
 

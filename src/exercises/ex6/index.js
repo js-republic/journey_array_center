@@ -1,51 +1,6 @@
 const { flatten } = require('../../utils/flatten');
 
-function getPlayersNameFromPlays() {
-
-	const plays = [
-		{
-			players: [
-				{
-					name: 'Ready Player One',
-					id: 1
-				}, {
-					name: 'Neo',
-					id: 2
-				}
-			],
-			time: 65
-		}, {
-			players: [
-				{
-					name: 'John',
-					id: 3
-				}, {
-					name: 'Neo',
-					id: 2
-				}
-			],
-			time: 21
-		}, {
-			players: [
-				{
-					name: 'Electro',
-					id: 4
-				}, {
-					name: 'John',
-					id: 3
-				}
-			],
-			time: 49
-		}, {
-			players: [
-				{
-					name: 'Winston',
-					id: 4
-				}
-			],
-			time: 141
-		}
-	];
+function getPlayersNameFromPlays(plays) {
 
 	const finalPlayers = [];
 
@@ -61,6 +16,8 @@ function getPlayersNameFromPlays() {
 		}
 	}
 
+	return finalPlayers;
+
 	// const finalPlayers = flatten(plays
 	// 	.filter(play => play.time > 60)
 	// 	.map(play => play.players.reduce((acc, player) =>
@@ -68,3 +25,7 @@ function getPlayersNameFromPlays() {
 	// 	, []))
 	// );
 }
+
+module.exports = {
+	getPlayersNameFromPlays
+};

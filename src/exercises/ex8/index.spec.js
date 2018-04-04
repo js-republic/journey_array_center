@@ -1,6 +1,6 @@
 const { getScore, getBadges } = require('./index');
 
-xdescribe('In Exercise 8 FileSystem ', () => {
+describe('In Exercise 8 FileSystem ', () => {
     test("getBadges should return expected value", async () => {
         // Given
         const expectedValue = [ 
@@ -25,4 +25,4 @@ xdescribe('In Exercise 8 FileSystem ', () => {
         // Then
         expect(calculatedValue).toEqual(expectedValue);
     });
-})
+});

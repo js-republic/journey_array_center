@@ -1,16 +1,20 @@
-function deleteElementByNameModifyingExisting() {
+function deleteElementByNameModifyingExisting(people, toDelete) {
 
-	let people = ['Mario', 'Luigi', 'Bowser', 'Peach', 'Toad', 'Toadette'];
-
-	const peopleWithoutBowser = [];
+	const peopleWithoutElement = [];
 
 	for (let i = 0; i < people.length; i++) {
-		if(people[i] !== 'Bowser') {
-			peopleWithoutBowser.push(people[i]);
+		if(people[i] !== toDelete) {
+			peopleWithoutElement.push(people[i]);
 		}
 	}
 
-	people = peopleWithoutBowser;
+	people = peopleWithoutElement;
 
-	people.splice(people.findIndex(x => x === 'Bowser'), 1);
+	// people.splice(people.findIndex(x => x === 'Bowser'), 1);
+
+	return people;
 }
+
+module.exports = {
+	deleteElementByNameModifyingExisting
+};

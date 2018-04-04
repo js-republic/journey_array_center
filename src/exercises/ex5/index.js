@@ -1,10 +1,8 @@
-function checkForPalindrome() {
-
-	const palindrome = 'never odd or even';
+function checkForPalindrome(text) {
 
 	let isPalindrome = true;
 
-	const arrayOfLetter = palindrome.split('');
+	const arrayOfLetter = text.split('');
 	const arrayOfLetterWithoutSpaces = [];
 
 	for(const letter of arrayOfLetter) {
@@ -24,11 +22,17 @@ function checkForPalindrome() {
 		i++; j--;
 	}
 
-	const palindromeWithoutSpaces = palindrome.replace(/ /g, '');
+	return isPalindrome;
 
-	const isPalindrome2 =
-		palindromeWithoutSpaces === palindromeWithoutSpaces
-			.split('')
-			.reverse()
-			.join('');
+	// const palindromeWithoutSpaces = text.replace(/ /g, '');
+
+	// const isPalindrome2 =
+	// 	palindromeWithoutSpaces === palindromeWithoutSpaces
+	// 		.split('')
+	// 		.reverse()
+	// 		.join('');
 }
+
+module.exports = {
+	checkForPalindrome
+};
