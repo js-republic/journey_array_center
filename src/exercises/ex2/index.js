@@ -9,8 +9,6 @@ function howMuchButterDoINeed(elements) {
 	}
 
 	return total;
-
-	// return elements.reduce((a, b) => a + b, 0);
 }
 
 module.exports = {

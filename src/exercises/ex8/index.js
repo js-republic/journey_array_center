@@ -28,10 +28,6 @@ function getScore() {
 				}
 			}
 
-			// const [scoreFor, scoreWhile] = Object.entries(content)
-			// 	.filter(([key, entry]) => key === 'scoreFor' || key === 'scoreWhile')
-			// 	.map(([key, entry]) => entry.reduce((acc, value) => acc += value, 0));
-
 			resolve({
 				scoreFor: scoreFor,
 				totalFor: content.totalFor,

@@ -10,8 +10,6 @@ function deleteElementByNameModifyingExisting(people, toDelete) {
 
 	people = peopleWithoutElement;
 
-	// people.splice(people.findIndex(x => x === 'Bowser'), 1);
-
 	return people;
 }
 

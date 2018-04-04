@@ -23,14 +23,6 @@ function checkForPalindrome(text) {
 	}
 
 	return isPalindrome;
-
-	// const palindromeWithoutSpaces = text.replace(/ /g, '');
-
-	// const isPalindrome2 =
-	// 	palindromeWithoutSpaces === palindromeWithoutSpaces
-	// 		.split('')
-	// 		.reverse()
-	// 		.join('');
 }
 
 module.exports = {
