@@ -1,7 +1,7 @@
 const { deleteElementByNameModifyingExisting } = require('./index');
 
 describe('In Exercise 3 ', () => {
-    test("deleteElementByNameModifyingExisting should return expected value", () => {
+    test("deleteElementByNameModifyingExisting should same array without 'Bowser' value", () => {
 
         // Given
 

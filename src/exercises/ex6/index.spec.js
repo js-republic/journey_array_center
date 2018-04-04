@@ -1,7 +1,7 @@
 const { getPlayersNameFromPlays } = require('./index');
 
 describe('In Exercise 3 ', () => {
-    test("getPlayersNameFromPlays should return true with 'never odd or even'", () => {
+    test("getPlayersNameFromPlays should return array of players name who played at least a game more than 60 min", () => {
 
         // Given
         const plays = [
@@ -15,7 +15,7 @@ describe('In Exercise 3 ', () => {
                         id: 2
                     }
                 ],
-                time: 65
+                time: 65 // in minutes
             }, {
                 players: [
                     {

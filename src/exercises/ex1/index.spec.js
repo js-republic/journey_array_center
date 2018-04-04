@@ -1,7 +1,7 @@
 const { getCountries } = require('./index');
 
 describe('In Exercise 1 ', () => {
-    test("getCountries should return expected value", async () => {
+    test("getCountries should return expected countries array with iso containing iso639 and 1366", () => {
 
         // Given
         const countries = [
