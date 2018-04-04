@@ -14,11 +14,7 @@ function doIHaveFruits(fruits, whatIHave) {
 	// 	.some(x => fruits.includes(x));
 }
 
-function urlHasKeyword() {
-
-	const url = 'http://mywebsite.com/some/page/easteregg/test';
-
-	const splittedUrl = url.split('/');
+function urlHasKeyword(splittedUrl) {
 
 	let hasEasterEgg = false;
 
@@ -28,15 +24,13 @@ function urlHasKeyword() {
 		}
 	}
 
-	// const hasEasterEgg = url
-	// 	.split('/')
+	return hasEasterEgg;
+
+	// return url
 	// 	.some(x => x === 'easteregg');
 }
 
-function everyNoteUpThanTen() {
-
-	const minNote = 10;
-	const notes = [11, 14, 15, 19, 18, 19];
+function everyNoteUpThanTen(minNote, notes) {
 
 	let allNotesGood = true;
 
@@ -46,7 +40,9 @@ function everyNoteUpThanTen() {
 		}
 	}
 
-	// const allNotesGood = notes.every(note => note >= minNote);
+	return allNotesGood;
+
+	// return notes.every(note => note >= minNote);
 }
 
 module.exports = {
