@@ -16,5 +16,5 @@ Please, feel free to implement, as you like. The solutions are not absolute. Dif
 To run the tests, please, run this command:
 
 ```
-$ npm test
+$ npm run test
 ```
