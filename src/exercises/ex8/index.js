@@ -26,17 +26,8 @@ function getBadges(){
 	return new Promise((resolve) => {
 		fs.readFile('src/exercises/ex8/files/badges.json', 'utf-8', (err,data) => {
 			const contentFileParsed = JSON.parse(data);
-
-			let allBadges = [];
-
-			for(const key in contentFileParsed){
-				if(contentFileParsed.hasOwnProperty(key)){
-					for(let i = 0; i < contentFileParsed[key].length; i++){
-						allBadges.push(contentFileParsed[key][i]);
-					}
-				}
-			}
-
+			
+			let allBadges = Object.values(contentFileParsed).flat();
 			resolve(allBadges);
 		});
 	});
